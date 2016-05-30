@@ -16,8 +16,8 @@
 
     <license>Apache 2.0</license>
 
-    <preference name="APP_ID" />
-    <preference name="APP_NAME" />
+    <!-- <preference name="APP_ID" /> -->
+    <!-- <preference name="APP_NAME" /> -->
 
     <engines>
         <!-- Requires > 3.5.0 because of the custom Framework tag for iOS [CB-6698] -->
@@ -49,8 +49,8 @@
 
         <source-file src="src/android/facebookconnect.xml" target-dir="res/values" />
         <config-file target="res/values/facebookconnect.xml" parent="/*">
-            <string name="fb_app_id">$APP_ID</string>
-            <string name="fb_app_name">$APP_NAME</string>
+            <string name="fb_app_id">1548164908821635</string>
+            <string name="fb_app_name">Mr. X</string>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="application">
@@ -88,11 +88,11 @@
         <source-file src="src/ios/FacebookConnectPlugin.m" />
 
         <config-file target="*-Info.plist" parent="FacebookAppID">
-            <string>$APP_ID</string>
+            <string>1548164908821635</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="FacebookDisplayName">
-            <string>$APP_NAME</string>
+            <string>Mr. X</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
@@ -100,7 +100,7 @@
             <dict>
               <key>CFBundleURLSchemes</key>
               <array>
-                <string>fb$APP_ID</string>
+                <string>fb1548164908821635</string>
               </array>
             </dict>
           </array>
